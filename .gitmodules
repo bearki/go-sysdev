@@ -1,0 +1,3 @@
+[submodule "lib/sysdev"]
+	path = lib/sysdev
+	url = https://github.com/bearki/sysdev.git
