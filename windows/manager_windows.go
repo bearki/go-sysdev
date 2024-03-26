@@ -8,6 +8,7 @@ package windows
 // #include "sysdev_helper.h"
 import "C"
 import (
+	"errors"
 	"fmt"
 
 	"github.com/bearki/go-sysdev/sysdevmanager"
@@ -21,10 +22,10 @@ func convertStatusCode(code C.StatusCode) error {
 		return nil
 	// 传入参数错误
 	case C.StatusCode_ErrInputParam:
-		return sysdevmanager.ErrInputParam
+		return ErrInputParam
 	// 获取设备信息集句柄失败
 	case C.StatusCode_ErrGetClassDevs:
-		return sysdevmanager.ErrGetClassDevs
+		return ErrGetClassDevs
 	// 默认
 	default:
 		return fmt.Errorf("unknow system device manager status code: %d", code)
@@ -50,7 +51,7 @@ func (p *SystemDevice) GetNetworkCardInfo() ([]sysdevmanager.NetworkCardInfo, er
 	// 获取网卡信息
 	code := C.SysDevGetNetworkCardInfo(&replyList, &replyListSize)
 	if err := convertStatusCode(code); err != nil {
-		return nil, err
+		return nil, errors.Join(sysdevmanager.ErrGetNetworkCardInfoFailed, err)
 	}
 
 	// 延迟释放

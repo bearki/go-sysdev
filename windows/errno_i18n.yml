@@ -1,0 +1,7 @@
+ErrInputParam:
+  zh-cn: "传入参数错误"
+  en-us: "Invalid input parameter"
+
+ErrGetClassDevs:
+  zh-cn: "获取设备信息集句柄失败"
+  en-us: "Failed to get device information set handle"

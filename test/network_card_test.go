@@ -11,7 +11,7 @@ import (
 
 func TestNetworkCard(t *testing.T) {
 	goi18n.SetDefault(goi18n.ZH_CN)
-	fmt.Println(sysdevmanager.ErrInputParam)
+	fmt.Println(sysdevmanager.ErrGetNetworkCardInfoFailed)
 	h := sysdev.New()
 	res, err := h.GetNetworkCardInfo()
 	fmt.Println(res, err)

@@ -1,4 +1,4 @@
-package sysdevmanager
+package windows
 
 import (
 	_ "embed"
@@ -12,7 +12,7 @@ import (
 type errno uint
 
 // 包名，以便于错误码能正常描述
-const packageDescription = "system device manager lib"
+const packageDescription = "system device manager lib windows implement"
 
 //go:embed errno_i18n.yml
 var errYml []byte
