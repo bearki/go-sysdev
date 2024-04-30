@@ -1,11 +1,9 @@
 package windows
 
-// #cgo windows,386 CFLAGS: -I${SRCDIR}/../lib/libsysdev/libsysdev_windows_i686/include
-// #cgo windows,amd64 CFLAGS: -I${SRCDIR}/../lib/libsysdev/libsysdev_windows_x86_64/include
-// #cgo windows,386 LDFLAGS: -L${SRCDIR}/../lib/libsysdev/libsysdev_windows_i686/lib -lsysdev
-// #cgo windows,amd64 LDFLAGS: -L${SRCDIR}/../lib/libsysdev/libsysdev_windows_x86_64/lib -lsysdev
-// #cgo LDFLAGS: -lsetupapi -Wl,-Bstatic -lstdc++
-// #include "sysdev_helper.h"
+/*
+#cgo pkg-config: sysdev
+#include "sysdev_helper.h"
+*/
 import "C"
 import (
 	"errors"

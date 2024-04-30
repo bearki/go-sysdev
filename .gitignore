@@ -1,2 +1,5 @@
 # ignore all specific ext files
 *.exe
+
+# ignore directory
+/lib/lib*/
