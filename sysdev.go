@@ -2,6 +2,7 @@ package sysdev
 
 /*
 #cgo pkg-config: sysdev
+#cgo CFLAGS: -I/home/WORK/Project/sysdev/install/gnu/libsysdev_linux_x86_64/include
 #include "sysdev_helper.h"
 */
 import "C"
