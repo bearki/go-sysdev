@@ -1,5 +1,5 @@
 # Package Information for pkg-config
-prefix=C:\Users\WORK-XKC\Desktop\Project\Go-Sysdev\lib\libsysdev\libsysdev_windows_i686
+prefix=D:\Projects\sysdev\dist\libsysdev_windows_i686
 libdir=${prefix}/lib
 includedir=${prefix}/include
 

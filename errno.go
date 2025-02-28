@@ -1,4 +1,4 @@
-package sysdevmanager
+package sysdev
 
 const (
 	_ errno = iota // 占位

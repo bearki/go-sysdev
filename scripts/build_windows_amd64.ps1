@@ -12,7 +12,9 @@ $Env:GOOS = "windows"
 $Env:GOARCH = "amd64"
 $Env:CGO_ENABLED = "1"
 $Env:PATH = "${Env:MinGW64}\bin;${Env:PATH}"
-$Env:PKG_CONFIG_PATH = "${ProjectRoot}\lib\pkgconfig\windwos_x86_64"
+$Env:PKG_CONFIG_PATH = "${ProjectRoot}\lib\pkgconfig\windows_x86_64"
 
 # 执行
-go build "${ProjectRoot}\cmd\sysdev"
+gcc -v
+go clean -cache
+go build -v "${ProjectRoot}\cmd\sysdev"

@@ -9,7 +9,11 @@ import (
 
 func main() {
 	goi18n.SetDefault(goi18n.ZH_CN)
-	h := sysdev.New()
-	res, err := h.GetNetworkCardInfo()
-	fmt.Println(res, err)
+	res, err := sysdev.GetNetworkCardInfo()
+	if err != nil {
+		panic(err)
+	}
+	for _, item := range res {
+		fmt.Println(item)
+	}
 }

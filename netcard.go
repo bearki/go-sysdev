@@ -1,4 +1,4 @@
-package sysdevmanager
+package sysdev
 
 import (
 	"fmt"
@@ -43,6 +43,7 @@ func (val NetworkCardMacAddress) String() string {
 
 // NetworkCardInfo 网卡信息
 type NetworkCardInfo struct {
+	Name       string                // 网卡名称
 	Type       NetworkCardType       // 网卡类型
 	MacAddress NetworkCardMacAddress // 网卡MAC地址
 }

@@ -1,0 +1,5 @@
+{
+    "go.toolsEnvVars": {
+        "PKG_CONFIG_PATH": "${workspaceFolder}/lib/pkgconfig/windows_x86_64"
+    }
+}
