@@ -8,10 +8,10 @@ $ProjectRoot = Resolve-Path -Path "${PSScriptRoot}\.."
 # 打印工作路径
 [Console]::WriteLine("ProjectRoot: ${ProjectRoot}")
 # 配置环境
+$Env:PATH = "${Env:MinGW32}\bin;${Env:PATH}"
 $Env:GOOS = "windows"
 $Env:GOARCH = "386"
 $Env:CGO_ENABLED = "1"
-$Env:PATH = "${Env:MinGW32}\bin;${Env:PATH}"
 $Env:PKG_CONFIG_PATH = "${ProjectRoot}\lib\pkgconfig\windwos_i686"
 
 # 执行
