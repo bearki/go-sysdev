@@ -40,7 +40,9 @@ func GetNetworkCardInfo() ([]NetworkCardInfo, error) {
 		// 构建信息
 		var info NetworkCardInfo
 		// 提取网卡名称
-		info.Name = C.GoString(item.netCardName)
+		if item.netCardName != nil {
+			info.Name = C.GoString(item.netCardName)
+		}
 		// 转换网卡类型
 		info.Type = NetworkCardType_Unknown
 		switch item.netCardType {

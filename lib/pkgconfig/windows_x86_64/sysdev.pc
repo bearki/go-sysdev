@@ -1,5 +1,5 @@
 # Package Information for pkg-config
-prefix=D:\Projects\sysdev\dist\libsysdev_windows_x86_64
+prefix=D:\Projects\go-sysdev\lib\libsysdev\libsysdev_windows_x86_64_mingw
 libdir=${prefix}/lib
 includedir=${prefix}/include
 
