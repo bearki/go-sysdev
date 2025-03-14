@@ -1,0 +1,17 @@
+[
+  {
+    "Name": "libsysdev",
+    "Repository": "http://gitea.local.sixelp.com/common/sysdev-action",
+    "Version": "v2.0.2.1",
+    "Targets": {
+      "Windows": {
+        "Archs": ["i686_mingw", "x86_64_mingw"],
+        "CompressType": "zip"
+      },
+      "Linux": {
+        "Archs": ["i686_gnu", "x86_64_gnu", "arm_gnu", "aarch64_gnu"],
+        "CompressType": "tar.gz"
+      }
+    }
+  }
+]

@@ -2,4 +2,4 @@
 *.exe
 
 # ignore directory
-/lib/lib*/
+/libs/

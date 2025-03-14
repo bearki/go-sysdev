@@ -1,6 +1,6 @@
 {
     "go.toolsEnvVars": {
         "CGO_ENABLED": "1",
-        "PKG_CONFIG_PATH": "${workspaceFolder}/lib/pkgconfig/linux_x86_64",
+        "PKG_CONFIG_PATH": "${workspaceFolder}/libs/pkgconfig/windows_x86_64",
     }
 }
